@@ -1,0 +1,6 @@
+services:
+  pizzapromptcli:
+    image: pizzapromptcli
+    build:
+      context: .
+      dockerfile: ./Dockerfile
