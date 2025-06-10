@@ -1,6 +1,0 @@
-services:
-  dominosapi:
-    image: dominosapi
-    build:
-      context: .
-      dockerfile: ./Dockerfile
