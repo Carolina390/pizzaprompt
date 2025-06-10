@@ -1,0 +1,14 @@
+version: '0.1.0'
+services:
+  pizzapromptcli:
+    build:
+      context: ./cli
+    volumes:
+      - ./shared:/pizzaprompt/shared
+    depends_on:
+      - dominosapi
+  dominosapi:
+    build: 
+      context: ./api
+    volumes:
+      - ./shared:/pizzaprompt/shared
