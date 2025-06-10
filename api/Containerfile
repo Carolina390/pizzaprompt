@@ -1,0 +1,9 @@
+FROM python:3.9-slim
+
+WORKDIR /pizzaprompt
+
+COPY . /pizzaprompt
+
+EXPOSE 8080
+
+CMD ["cp", "dominosapi.py", "/pizzaprompt/shared/"]
